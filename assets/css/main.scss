@@ -1,0 +1,13 @@
+// Base
+@use "reset" as *;
+@use "setting" as *;
+
+// Common
+@use "components/common/header" as *;
+@use "components/common/footer" as *;
+
+// Home 
+@use "components/features/home" as *;
+
+// UIs 
+@use "components/common/ui" as *;

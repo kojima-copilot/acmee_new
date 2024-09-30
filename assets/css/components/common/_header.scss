@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 3rem;
+  text-align: center;
+  height: 60px;
+  align-items: center;
+
+  .logo {
+    width: 292px;
+  }
+}
+
+.mainNav {
+  .menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+}

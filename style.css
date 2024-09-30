@@ -1,0 +1,20 @@
+/*
+Theme Name: acmee_wp
+Theme URI: https://website.com/acmee_wp
+Author: Marcelo Vieira
+Author URI: https://website.com/acmee_wp
+Description: This theme is for ACMEE株式会社
+Requires at least: 5.6
+Tested up to: 5.9
+Requires PHP: 8.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: acmee_wp
+Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready
+*/
+
+/**
+1. Normalize
+2. Theme Specific CSS
+*/

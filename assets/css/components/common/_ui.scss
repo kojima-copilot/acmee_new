@@ -1,0 +1,19 @@
+@use "../../setting" as *;
+
+.btn {
+    margin: 3rem auto;
+    color: white;
+    background-color: $btnBg;
+    width: fit-content;
+    display: block;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $btnBgHover;
+        transition: 0.3s ease all;
+    }
+}
+
