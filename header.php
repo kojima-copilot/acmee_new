@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+
     <?php wp_head(); ?>
 </head>
 
@@ -19,6 +20,10 @@
 
         <!-- Navigation Menu -->
         <nav class="mainNav">
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+            <?php  //wp_nav_menu(array('theme_location' => 'primary')); 
+            ?>
+            <?php wp_nav_menu(array('theme_location' => 'acmee_main_menu', 'depth => 2')); ?>
         </nav>
+
+
     </header>

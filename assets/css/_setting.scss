@@ -1,23 +1,23 @@
 /* Val---------------------------------------------- */
 
-$ff: "Noto Sans JP", "YakuHanJPs","Lato","Custom Yu Gothic","游ゴシック","Yu Gothic",YuGothic,Hiragino Sans,"Meiryo",Hiragino Kaku Gothic ProN,sans-serif,
- "UD Shin Go Regular", "Lucida Grande", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+// $ff: "Noto Sans JP", "YakuHanJPs","Lato","Custom Yu Gothic","游ゴシック","Yu Gothic",YuGothic,Hiragino Sans,"Meiryo",Hiragino Kaku Gothic ProN,sans-serif,
+//  "UD Shin Go Regular", "Lucida Grande", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
 
- $YuGothic: "Yu Gothic","游ゴシック","Yu Gothic",YuGothic,Hiragino Sans,"Meiryo",Hiragino Kaku Gothic ProN,sans-serif;
+//  $YuGothic: "Yu Gothic","游ゴシック","Yu Gothic",YuGothic,Hiragino Sans,"Meiryo",Hiragino Kaku Gothic ProN,sans-serif;
 
-$mincho: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+// $mincho: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
 
-$font: Hiragino Kaku Gothic Pro;
+$font: Hiragino Kaku Gothic Pro W3;
 
-$din-bi: 'din-bi';
-$din-cb: 'din-cb';
-$din-bl: 'din-bl';
-$din-b: 'din-b';
-$din-m: 'din-m';
-$din-cm: 'din-cm';
-$ud-m: "UD Shin Go Medium";
-$ud-db: "UD Shin Go DemiBold";
-$ud-b: "UD Shin Go Bold";
+// $din-bi: 'din-bi';
+// $din-cb: 'din-cb';
+// $din-bl: 'din-bl';
+// $din-b: 'din-b';
+// $din-m: 'din-m';
+// $din-cm: 'din-cm';
+// $ud-m: "UD Shin Go Medium";
+// $ud-db: "UD Shin Go DemiBold";
+// $ud-b: "UD Shin Go Bold";
 
 /*カラーテーマ-------------------------------------------*/
 $base:#F2F2F2;
@@ -25,9 +25,12 @@ $secondary_base : #ff0012;
 $accent : #70C6CD;
 $bg: #F2F2F2;
 
+$textHover: #499A9F;
+
 
 $btnBg: #70C6CD;
-$btnBgHover: #5CA9B0;
+$btnBgHover: #5AB1B8;
+$btnActive: #27829B;
 
 $border: #c5c5c5;
 
@@ -50,7 +53,6 @@ $border: #c5c5c5;
 $breakpoints: (
   's': 'screen and (max-width:480px)',
   'm': 'screen and (max-width: 767px) and (min-width:480px)',
-  // 'l': 'screen and (max-width: 1080px) and (min-width: 768px)',
   'l': 'screen and (max-width: 1079px) and (min-width: 768px)',
   'xl': 'screen and (min-width: 1080px) ',
 ) !default;

@@ -4,9 +4,10 @@
     margin: 3rem auto;
     color: white;
     background-color: $btnBg;
-    width: fit-content;
+    width: 320px;
+    text-align: center;
     display: block;
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 1rem;
     font-size: 1.5rem;
     border-radius: 10px;
     text-decoration: none;
@@ -17,3 +18,8 @@
     }
 }
 
+// 代表挨拶ボタン
+.btn.greeting {
+    letter-spacing: 6px;
+    margin-top: 6rem;
+}

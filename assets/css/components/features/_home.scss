@@ -4,7 +4,7 @@
 // Hero
 // =======================================
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 70vh;
 
   video {
@@ -68,7 +68,6 @@
   margin: 0 auto;
   padding: 4rem 0;
   border-top: 1px solid $border;
-  border-bottom: 1px solid $border;
 
   h2 {
     font-size: 2rem;
@@ -116,9 +115,8 @@
         font-weight: 200;
         width: 26%;
 
-        &:nth-of-type(1) {
-        //   border-right: 3px solid $border;
-        }
+        // &:nth-of-type(1) {
+        // }
 
         span {
           font-size: 1.2rem;
@@ -132,3 +130,141 @@
     }
   }
 }
+
+// =======================================
+// News
+// =======================================
+.news {
+  max-width: 1280px;
+  margin: 4rem auto;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    padding: 6rem 0;
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+    width: 40%;
+  }
+}
+
+.newsLinks {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem 4rem;
+  flex-wrap: wrap;
+  
+  &__item {
+    letter-spacing: 4px;
+    width: 27%;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+      transition: 0.1s ease all;
+      color: $accent;
+    }
+  }
+}
+
+
+// =======================================
+// greeting
+// =======================================
+.greeting {
+  background-color: #F6F6F6;
+  border-top: 1px solid $border;
+  padding: 4rem 0;
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__textArea {
+    width: 30%;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+  }
+
+  &__imgArea {
+    width: 43%;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+      transform: scaleY(1.05);
+    }
+  }
+  
+}
+
+// =======================================
+// Office
+// =======================================
+.office {
+  max-width: 1280px;
+  margin: 4rem auto;
+
+  &__wrapper {
+
+  }
+
+  &__textArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    width: 20%;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    width: 70%;
+  } 
+
+  &__imgArea {
+    margin: 3rem auto;
+  }
+}
+
+
+
+
+

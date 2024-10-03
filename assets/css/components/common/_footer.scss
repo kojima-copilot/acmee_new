@@ -1,0 +1,11 @@
+footer {
+    max-width: 1280px;
+    margin: 0 auto;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 4rem 0;
+  }
+}
