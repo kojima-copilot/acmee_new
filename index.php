@@ -4,7 +4,7 @@
     <!--  -->
     <section class="hero">
         <video autoplay loop muted playsinline class="hero-video">
-            <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero_video.mp4'); 
+            <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero_video.mp4');
                             ?>" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -28,12 +28,15 @@
 
         <div class="listWrapper">
             <ul class="listWrapper__list">
-                <li class="acmee-blue">求人<span>広告事業</span></li>
-                <li class="acmee-blue">出版<span>事業</span></li>
-                <li class="acmee-blue">営業<span>請負・代行事業</span></li>
-                <li class="acmee-blue">EC<span>企業</span></li>
-                <li class="acmee-blue">害獣<span>害虫駆除事業</span></li>
-                <li class="acmee-blue">DX<span>推進事業</span></li>
+                <li class="listWrapper__item">求人広告<span>メディア事業</span></li>
+                <li class="listWrapper__item">DX<span>推進事業</span></li>
+                <li class="listWrapper__item">リフォーム<span>事業</span></li>
+                <li class="listWrapper__item">経営<span>コンサルティング事業</span></li>
+            </ul>
+            <ul class="listWrapper__list second">
+                <li class="listWrapper__item">害獣害虫<span>駆除事業</span></li>
+                <li class="listWrapper__item">BANK OF MEMORIES<span>事業</span></li>
+                <li class="listWrapper__item">PRESIDENT’s<span>事業</span></li>
             </ul>
         </div>
         <a class="btn" href="#">ACMEEの事業内容</a>

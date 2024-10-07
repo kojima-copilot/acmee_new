@@ -115,19 +115,49 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   text-align: center;
   height: 60px;
   align-items: center;
 }
+@media screen and (max-width:480px) {
+  header {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) and (min-width:480px) {
+  header {
+    display: none;
+  }
+}
 header .logo {
-  width: 292px;
+  width: 280px;
+}
+@media screen and (max-width: 1079px) and (min-width: 768px) {
+  header .logo {
+    width: 240px;
+  }
 }
 
 .mainNav .menu {
   display: flex;
   justify-content: space-around;
   gap: 4rem;
+}
+@media screen and (max-width:480px) {
+  .mainNav .menu {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width:480px) {
+  .mainNav .menu {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1079px) and (min-width: 768px) {
+  .mainNav .menu {
+    gap: 3rem;
+  }
 }
 .mainNav .menu a {
   text-decoration: none;
@@ -376,7 +406,7 @@ header .logo {
 }
 
 .philosophy {
-  margin-top: 4rem;
+  margin: 4rem 1rem 0 0.5rem;
 }
 .philosophy p {
   border-top: 3px solid #333;
@@ -388,6 +418,21 @@ header .logo {
   font-size: 2rem;
   padding: 6px 0;
   position: relative;
+}
+@media screen and (max-width:480px) {
+  .philosophy p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width:480px) {
+  .philosophy p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1079px) and (min-width: 768px) {
+  .philosophy p {
+    font-size: 1.7rem;
+  }
 }
 .philosophy p span {
   color: #27829b;
@@ -438,10 +483,6 @@ header .logo {
   margin: 0 auto;
   padding-top: 30px;
 }
-.businessContent .listWrapper {
-  border: 3px solid #c5c5c5;
-  border-radius: 10px;
-}
 .businessContent .listWrapper__list {
   display: flex;
   flex-wrap: wrap;
@@ -451,19 +492,32 @@ header .logo {
 .businessContent .listWrapper__list li {
   list-style: none;
   color: #70C6CD;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
   line-height: 2.5rem;
   margin-top: 2rem;
-  letter-spacing: 4px;
-  font-weight: 200;
-  width: 26%;
+  letter-spacing: 1px;
+  width: 20%;
+  border: 1px solid #70C6CD;
+  text-align: center;
+  padding: 4rem 0;
+}
+.businessContent .listWrapper__list li:nth-of-type(1) {
+  border-radius: 20px 0 0 0;
 }
 .businessContent .listWrapper__list li span {
   font-size: 1.2rem;
   line-height: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 0.4rem;
   letter-spacing: 4px;
-  font-weight: 200;
+  font-weight: 900;
+  display: block;
+}
+.businessContent .listWrapper__list.second li {
+  width: 27.5%;
+}
+.businessContent .listWrapper__list.second li:last-of-type {
+  border-radius: 0 0 20px 0;
 }
 
 .news {
@@ -496,6 +550,9 @@ header .logo {
   letter-spacing: 4px;
   width: 27%;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .newsLinks__item:hover {
   text-decoration: underline;
@@ -673,6 +730,21 @@ header .logo {
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 3px;
+}
+@media screen and (max-width:480px) {
+  .btn {
+    padding: 0.6rem 0.2rem;
+    width: 280px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width:480px) {
+  .btn {
+    padding: 0.7rem 0.9rem;
+    width: 300px;
+    font-size: 1.3rem;
+  }
 }
 .btn:hover {
   background-color: #5AB1B8;

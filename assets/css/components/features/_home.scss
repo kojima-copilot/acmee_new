@@ -23,7 +23,7 @@
 // philosophy
 // =======================================
 .philosophy {
-  margin-top: 4rem;
+  margin: 4rem 1rem 0 0.5rem;
 
   p {
     border-top: 3px solid #333;
@@ -34,6 +34,17 @@
     font-size: 2rem;
     padding: 6px 0;
     position: relative; // Set relative positioning for absolute child elements
+
+    @include mq(s) {
+      font-size: 1.1rem;
+    }
+    @include mq(m) {
+      font-size: 1.2rem;
+    }
+
+    @include mq(l) {
+      font-size: 1.7rem;
+    }
 
     span {
       color: #27829b;
@@ -95,10 +106,6 @@
   }
 
   .listWrapper {
-    // display: flex;
-    border: 3px solid $border;
-    border-radius: 10px;
-
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -108,22 +115,38 @@
       li {
         list-style: none;
         color: $accent;
-        font-size: 3.2rem;
+        font-size: 2.4rem;
+        font-weight: 900;
         line-height: 2.5rem;
         margin-top: 2rem;
-        letter-spacing: 4px;
-        font-weight: 200;
-        width: 26%;
+        letter-spacing: 1px;
+        width: 20%;
+        border: 1px solid $accent;
+        text-align: center;
+        padding: 4rem 0;
 
-        // &:nth-of-type(1) {
-        // }
+        &:nth-of-type(1) {
+          border-radius: 20px 0 0 0;
+        }
 
         span {
           font-size: 1.2rem;
           line-height: 2.5rem;
-          margin-top: 2rem;
+          margin-top: 0.4rem;
           letter-spacing: 4px;
-          font-weight: 200;
+          font-weight: 900;
+          display: block;
+        }
+      }
+    }
+
+    &__list.second {
+
+      li {
+        width: 27.5%;
+
+        &:last-of-type {
+          border-radius: 0 0 20px 0;
         }
       }
     }
@@ -165,6 +188,9 @@
     letter-spacing: 4px;
     width: 27%;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
     &:hover {
       text-decoration: underline;
@@ -332,7 +358,6 @@
   margin-left: auto;
 
   &__wrapper {
-
   }
 
   &__textArea {
@@ -362,10 +387,7 @@
     width: 70%;
   }
 
-
-
   &__imgArea {
-
     img {
       border-radius: 0 20px 20px 0;
       width: 100%;
