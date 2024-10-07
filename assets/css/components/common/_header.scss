@@ -1,8 +1,12 @@
+@use "../../setting" as *;
+
 header {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   text-align: center;
   height: 60px;
   align-items: center;
@@ -15,7 +19,37 @@ header {
 .mainNav {
   .menu {
       display: flex;
-      justify-content: space-between;
-      gap: 1rem;
+      justify-content: space-around;
+      gap: 4rem;
+
+      a {
+        text-decoration: none;
+        color: $fontColor;
+        letter-spacing: 4px;
+
+        &:hover {
+          color: $fontColorHover;
+          transition: 0.2s ease all;
+        }
+      }
+
+      li {
+        &:last-of-type {
+          a {
+            padding: 0.9rem 1.9rem;
+            border-radius: 4px;
+            background-color: $accent;
+            color: white;
+
+            &:hover {
+              color: $fontColorHover;
+              transition: 0.2s ease all;
+              background-color: white;
+              border: 1px solid $accent;
+          }
+          }
+        }
+
+      }
   }
 }

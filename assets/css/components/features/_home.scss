@@ -124,7 +124,6 @@
           margin-top: 2rem;
           letter-spacing: 4px;
           font-weight: 200;
-
         }
       }
     }
@@ -137,7 +136,7 @@
 .news {
   max-width: 1280px;
   margin: 4rem auto;
-  
+
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@
   justify-content: flex-start;
   gap: 1rem 4rem;
   flex-wrap: wrap;
-  
+
   &__item {
     letter-spacing: 4px;
     width: 27%;
@@ -175,12 +174,11 @@
   }
 }
 
-
 // =======================================
 // greeting
 // =======================================
 .greeting {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-top: 1px solid $border;
   padding: 4rem 0;
 
@@ -222,21 +220,21 @@
       transform: scaleY(1.05);
     }
   }
-  
 }
 
 // =======================================
 // Office
 // =======================================
 .office {
-  max-width: 1280px;
   margin: 4rem auto;
 
   &__wrapper {
-
   }
 
   &__textArea {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,14 +255,124 @@
     letter-spacing: 4px;
     font-weight: 200;
     width: 70%;
-  } 
+  }
 
   &__imgArea {
-    margin: 3rem auto;
+    margin: 0 auto 3rem auto;
+    width: 100%;
+    overflow-x: hidden;
+
+    img {
+      width: 100%;
+      transform: scaleY(1.05);
+      margin-right: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        transition: all 0.3s ease;
+        filter: brightness(0.8);
+      }
+    }
   }
 }
 
+// =======================================
+// Testimonial
+// =======================================
+.testimonial {
+  max-width: 1280px;
+
+  &__wrapper {
+    max-width: 1280px;
+  }
+
+  &__textArea {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    width: 20%;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    width: 70%;
+  }
+
+  &__imgArea {
+    img {
+      border-radius: 0 20px 20px 0;
+      width: 100%;
+      max-width: 1280px;
+      height: 400px;
+      object-fit: cover;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// =======================================
+// recruit
+// =======================================
+.recruit {
+  max-width: 1280px;
+  margin-left: auto;
+
+  &__wrapper {
+
+  }
+
+  &__textArea {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-left: auto;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    width: 20%;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    width: 70%;
+  }
 
 
 
+  &__imgArea {
 
+    img {
+      border-radius: 0 20px 20px 0;
+      width: 100%;
+      max-width: 1280px;
+      height: 400px;
+      object-fit: cover;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+}
