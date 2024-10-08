@@ -28,6 +28,7 @@
 
         <div class="listWrapper">
             <ul class="listWrapper__list">
+                <!-- <li class="listWrapper__item"><a href="">求人広告<span>メディア事業</span></a></li> -->
                 <li class="listWrapper__item">求人広告<span>メディア事業</span></li>
                 <li class="listWrapper__item">DX<span>推進事業</span></li>
                 <li class="listWrapper__item">リフォーム<span>事業</span></li>
@@ -35,7 +36,7 @@
             </ul>
             <ul class="listWrapper__list second">
                 <li class="listWrapper__item">害獣害虫<span>駆除事業</span></li>
-                <li class="listWrapper__item">BANK OF MEMORIES<span>事業</span></li>
+                <li class="listWrapper__item">BANK OF MEMORIES<span>事業</span></li>
                 <li class="listWrapper__item">PRESIDENT’s<span>事業</span></li>
             </ul>
         </div>
@@ -59,9 +60,8 @@
             <?php
             get_template_part('components/newLoopPosts');
             ?>
-
-            <a class="btn" href="#">お知らせ一覧</a>
         </div>
+        <a class="btn" href="#">お知らせ一覧</a>
     </section>
 
     <!--  -->

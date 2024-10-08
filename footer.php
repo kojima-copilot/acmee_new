@@ -14,8 +14,11 @@
 
     <div class="footerAddress">
         <div class="footerAddress__container">
-            <div class="footerAddress__title">東京本社：</div>
+            <div class="footerAddress__title">東京本社:</div>
             <address class="footerAddress__desc">〒160-0023 東京都新宿区西新宿7-7-28 第二山本ビル202号　TEL:03-5937-1475 FAX:03-5937-1476</address>
+            <div class="footerAddress__desc">
+                <!-- 営業時間：9:00〜18:00　（土・日・祝日・12月31日〜1月3日を除く） -->
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d354.0205625793748!2d139.69744945347293!3d35.69717642267273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d29a23ab093%3A0x347ed34be34ea964!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yX5LiB55uu77yX4oiS77yS77yYIOWxseacrOODk-ODqyDnrKws5LqM!5e0!3m2!1sja!2sjp!4v1728282150740!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 

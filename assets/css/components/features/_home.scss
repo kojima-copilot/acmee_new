@@ -23,7 +23,7 @@
 // philosophy
 // =======================================
 .philosophy {
-  margin: 4rem 1rem 0 0.5rem;
+  margin: 5rem 1rem 5rem 0.5rem;
 
   p {
     border-top: 3px solid #333;
@@ -32,8 +32,8 @@
     text-align: center;
     margin: 0 auto;
     font-size: 2rem;
-    padding: 6px 0;
-    position: relative; // Set relative positioning for absolute child elements
+    padding: 6px 0.8rem;
+    position: relative;
 
     @include mq(s) {
       font-size: 1.1rem;
@@ -77,32 +77,98 @@
 .businessContent {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 0.8rem;
   border-top: 1px solid $border;
 
-  h2 {
-    font-size: 2rem;
-    text-shadow: #bcbcbc 0 0 4px;
-    letter-spacing: 4px;
-    font-weight: 400;
+  @include mq(l) {
+    padding: 4rem 0.5rem;
   }
 
-  p {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    margin-top: 2rem;
-    letter-spacing: 4px;
-    font-weight: 200;
-    text-shadow: #6e6e6e 0 3px 3px;
+  @include mq(m) {
+    padding: 3rem 0.5rem;
+  }
+
+  @include mq(s) {
+    padding: 2rem 0.5rem;
   }
 
   &__wrapper {
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 7rem;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 1.1rem;
+    justify-content: center;
+    width: 100%;
+    color: $fontColor;
+
+    @include mq(xl) {
+      gap: 6rem;
+    }
+
+    @include mq(l) {
+      display: block;
+      text-align: center;
+    }
+
+    @include mq(m) {
+      display: block;
+      text-align: center;
+    }
+
+    @include mq(s) {
+      display: block;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      text-shadow: #bcbcbc 0 0 4px;
+      letter-spacing: 4px;
+      font-weight: 400;
+
+      @include mq(m) {
+        font-size: 2.5rem;
+      }
+
+      @include mq(s) {
+        font-size: 2.2rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      margin-top: 0.4rem;
+      letter-spacing: 4px;
+      font-weight: 200;
+      text-shadow: #6e6e6e 0 3px 3px;
+
+      @include mq(l) {
+        margin-bottom: 1rem;
+      }
+
+      @include mq(m) {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      @include mq(s) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      br {
+        @include mq(m) {
+          display: none;
+        }
+
+        @include mq(s) {
+          display: none;
+        }
+      }
+    }
   }
 
   .listWrapper {
@@ -112,6 +178,23 @@
       justify-content: center;
       gap: 2rem 2rem;
 
+      @include mq(xl) {
+        gap: 1rem 1rem;
+      }
+
+      @include mq(l) {
+        gap: 1rem 1rem;
+      }
+
+      @include mq(m) {
+        gap: 1rem 1rem;
+      }
+
+      @include mq(s) {
+        gap: 0 0.8rem;
+      }
+
+      // each item
       li {
         list-style: none;
         color: $accent;
@@ -123,7 +206,33 @@
         width: 20%;
         border: 1px solid $accent;
         text-align: center;
-        padding: 4rem 0;
+        padding: 4rem 0.2rem;
+
+        @include mq(xl) {
+          font-size: 2.2rem;
+          padding: 3rem 0;
+        }
+
+        @include mq(l) {
+          width: 40%;
+          font-size: 2.3rem;
+          padding: 3rem 0;
+          margin-top: 1rem;
+        }
+
+        @include mq(m) {
+          width: 45%;
+          font-size: 1.8rem;
+          padding: 2rem 0;
+          margin-top: 1rem;
+        }
+
+        @include mq(s) {
+          width: 45%;
+          font-size: 1.45rem;
+          padding: 0.9rem 0;
+          margin-top: 1rem;
+        }
 
         &:nth-of-type(1) {
           border-radius: 20px 0 0 0;
@@ -136,17 +245,63 @@
           letter-spacing: 4px;
           font-weight: 900;
           display: block;
+
+          @include mq(xl) {
+            font-size: 1rem;
+          }
+
+          @include mq(l) {
+            font-size: 1.3rem;
+          }
+
+          @include mq(m) {
+            font-size: 1.2rem;
+          }
+
+          @include mq(s) {
+            font-size: 1rem;
+          }
         }
       }
     }
 
     &__list.second {
-
       li {
         width: 27.5%;
 
+        @include mq(l) {
+          width: 40%;
+        }
+
+        @include mq(m) {
+          width: 45%;
+        }
+
+        @include mq(s) {
+          width: 45%;
+        }
+
+        &:nth-of-type(1) {
+          border-radius: 0;
+        }
+
         &:last-of-type {
           border-radius: 0 0 20px 0;
+
+          @include mq(l) {
+            border-radius: 0 0 20px 20px;
+            width: 82%;
+          }
+
+          @include mq(m) {
+            border-radius: 0 0 20px 20px;
+            width: 94%;
+          }
+
+          @include mq(s) {
+            border-radius: 0 0 20px 20px;
+            width: 82%;
+          }
         }
       }
     }
@@ -161,12 +316,13 @@
   margin: 4rem auto;
 
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
     padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 
   &__title {
@@ -197,6 +353,62 @@
       transition: 0.1s ease all;
       color: $accent;
     }
+  }
+}
+
+// Each Post
+.newsPosts {
+  margin-bottom: 3rem;
+
+  a {
+    text-decoration: none;
+    color: $fontColor;
+    border-bottom: 1px solid $border;
+    padding: 2rem 0;
+
+    &:hover {
+      transition: 0.1s ease all;
+      color: $accent;
+
+      img {
+        filter: brightness(0.85);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 2rem 3rem;
+  }
+
+  &__img {
+    width: 160px;
+    height: 160px;
+    display: block;
+  }
+
+  &__texts {
+    time {
+      letter-spacing: 8px;
+      margin-top: 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 200;
   }
 }
 

@@ -19,13 +19,13 @@
 
   @include mq(s) {
     padding: 0.6rem 0.2rem;
-    width: 280px;
-    font-size: 1.2rem;
+    width: 200px;
+    font-size: 1.1rem;
   }
 
   @include mq(m) {
     padding: 0.7rem 0.9rem;
-    width: 300px;
+    width: 240px;
     font-size: 1.3rem;
   }
 
