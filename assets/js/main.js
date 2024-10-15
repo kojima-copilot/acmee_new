@@ -1,14 +1,31 @@
-console.log("Test from main.js")
+console.log("Test from main.js");
 
-// quick slide
-jQuery(document).ready(function($){
-  $('.office__imgArea').slick({
+// =====================================
+// Slick slide
+// =====================================
+jQuery(document).ready(function ($) {
+  // Get window width
+  const  windowWidth = $(window).width();
+  console.log(windowWidth);
+
+  // 1079 以下でスライダーを表示
+  if (windowWidth <= 1079) {
+    // News Section
+    $(".newsPosts").slick({
       infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 2000
-  });
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  }
+
+  // Office Section (Table, SP only)
+  // $(".office__imgArea").slick({
+  //   infinite: true,
+  //   slidesToShow: 5,
+  //   slidesToScroll: 2,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  // });
 });
 
 // =======================================
@@ -47,11 +64,6 @@ window.addEventListener("scroll", throttle(handleScroll, 200));
 goTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
-
-
-
-
-

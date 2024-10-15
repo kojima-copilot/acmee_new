@@ -1,16 +1,26 @@
 <footer class="footer">
 
-    <div class="footer__wrapper">
-        <div class="footer__logo">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/footerLogo.png'); ?>" alt="ACMEE">
+
+
+    <!-- Footer Wrapper SP only -->
+    <div class="footer__wrapperSP">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/footerLogo.png'); ?>" alt="ACMEE" class="footer__wrapperSP--img">
+
+        <!-- PC only -->
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/footerLogo.png'); ?>" alt="ACMEE">
+            </div>
+
+            <div class="footer__homeLink"><a href="/">ホーム</a></div>
+
+            <nav class="footerMenu">
+                <!-- Footer Menu ２階層まで -->
+                <?php wp_nav_menu(array('theme_location' => 'acmee_footer_menu', 'depth' => 2)); ?>
+            </nav>
         </div>
-
-        <div class="footer__homeLink"><a href="/">ホーム</a></div>
-
-        <nav class="footerMenu">
-            <?php wp_nav_menu(array('theme_location' => 'acmee_footer_menu', 'depth' => 2)); ?>
-        </nav>
     </div>
+
 
     <div class="footerAddress">
         <div class="footerAddress__container">

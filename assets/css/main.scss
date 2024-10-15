@@ -7,8 +7,19 @@
 @use "components/common/footer" as *;
 @use "components/common/contactForms" as *;
 
-// Home 
+// Home Page
 @use "components/features/home" as *;
+
+// About Page
+@use "components/features/about" as *;
 
 // UIs 
 @use "components/common/ui" as *;
+
+
+@include mq(s) { 
+
+}
+@include mq(m) { 
+
+}

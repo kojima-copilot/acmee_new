@@ -25,6 +25,14 @@
 .philosophy {
   margin: 5rem 1rem 5rem 0.5rem;
 
+  @include mq(s) {
+    margin: 3rem 1rem 3rem 0.5rem;
+  }
+
+  @include mq(m) {
+    margin: 3rem 1rem 3rem 0.5rem;
+  }
+
   p {
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
@@ -34,6 +42,7 @@
     font-size: 2rem;
     padding: 6px 0.8rem;
     position: relative;
+    margin-bottom: 4rem;
 
     @include mq(s) {
       font-size: 1.1rem;
@@ -172,6 +181,8 @@
   }
 
   .listWrapper {
+    margin-bottom: 6rem;
+
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -315,14 +326,31 @@
   max-width: 1280px;
   margin: 4rem auto;
 
+  @include mq(s) {
+    margin: 0 auto;
+  }
+
   &__wrapper {
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
-    padding: 6rem 0;
+    padding: 6rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    @include mq(l) {
+      flex-direction: column;
+    }
+
+    @include mq(m) {
+      flex-direction: column;
+    }
+
+    @include mq(s) {
+      flex-direction: column;
+      padding: 3rem 1.2rem;
+    }
   }
 
   &__title {
@@ -331,6 +359,10 @@
     font-weight: 400;
     text-align: center;
     width: 40%;
+
+    @include mq(s) {
+      width: 100%;
+    }
   }
 }
 
@@ -339,6 +371,21 @@
   justify-content: flex-start;
   gap: 1rem 4rem;
   flex-wrap: wrap;
+  align-items: flex-start;
+
+  @include mq(l) {
+    justify-content: center;
+  }
+
+  @include mq(m) {
+    justify-content: center;
+    gap: 2rem 2rem;
+  }
+
+  @include mq(s) {
+    justify-content: center;
+    gap: 2rem 1.8rem;
+  }
 
   &__item {
     letter-spacing: 4px;
@@ -346,7 +393,16 @@
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    cursor: pointer;
+
+    @include mq(m) {
+      font-size: 1rem;
+    }
+
+    @include mq(s) {
+      font-size: 1rem;
+      width: 42%;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -358,7 +414,13 @@
 
 // Each Post
 .newsPosts {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+  overflow-x: hidden;
+
+  @include mq(s) {
+    padding: 0 1rem;
+  }
 
   a {
     text-decoration: none;
@@ -385,13 +447,56 @@
     width: 160px;
     height: 160px;
     display: block;
+
+    @include mq(l) {
+      margin: 0 auto;
+      width: 240px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    @include mq(m) {
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    @include mq(s) {
+      margin: 0 auto;
+      width: 180px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
   }
 
   &__texts {
+    @include mq(l) {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    @include mq(m) {
+      margin: 0 auto;
+    }
+
+    @include mq(s) {
+      margin: 0 auto;
+    }
+
     time {
       letter-spacing: 8px;
       margin-top: 0.4rem;
       font-size: 1.2rem;
+
+      @include mq(s) {
+        font-size: 0.9rem;
+        margin-top: 0;
+      }
+
+      @include mq(m) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -401,6 +506,15 @@
     line-height: 2.5rem;
     font-weight: 900;
     margin-top: 1rem;
+
+    @include mq(s) {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+
+    @include mq(m) {
+      font-size: 1.2rem;
+    }
   }
 
   &__desc {
@@ -409,6 +523,10 @@
     margin-top: 0.8rem;
     letter-spacing: 2px;
     font-weight: 200;
+
+    @include mq(s) {
+      font-size: 0.95rem;
+    }
   }
 }
 
@@ -420,6 +538,14 @@
   border-top: 1px solid $border;
   padding: 4rem 0;
 
+  @include mq(s) {
+    padding:  2rem 0;
+  }
+
+  @include mq(m) {
+    padding: 2rem 0;
+  }
+
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -428,16 +554,43 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    @include mq(m) {
+      flex-direction: column;
+      padding: 2rem 0;
+    }
+
+    @include mq(s) {
+      flex-direction: column;
+      padding: 3rem 0;
+    }
   }
 
   &__textArea {
     width: 30%;
+
+    @include mq(m) {
+      width: 100%;
+      text-align: center;
+    }
+    @include mq(s) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__title {
     font-size: 2.4rem;
     letter-spacing: 4px;
     font-weight: 400;
+
+    @include mq(m) {
+      font-size: 2.2rem;
+    }
+
+    @include mq(s) {
+      font-size: 2rem;
+    }
   }
 
   &__desc {
@@ -446,10 +599,26 @@
     margin-top: 2rem;
     letter-spacing: 4px;
     font-weight: 200;
+
+    @include mq(m) {
+      font-size: 1.5rem;
+    }
+
+    @include mq(s) {
+      font-size: 1.3rem;
+    }
   }
 
   &__imgArea {
     width: 43%;
+
+    @include mq(m) {
+      width: 80%;
+    }
+
+    @include mq(s) {
+      width: 80%;
+    }
 
     img {
       width: 100%;
@@ -465,25 +634,95 @@
 // =======================================
 .office {
   margin: 4rem auto;
+  position: relative;
+
+  @include mq(s) {
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  @include mq(m) {
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  &::after {
+    content: '';
+    border-top: 1px solid $border;
+    position: absolute;
+    left: 0;
+    bottom: -6rem;
+    width: 100%;
+    height: 1px;
+    transform: translateY(-50%);
+    margin-right: auto;
+
+    @include mq(s) {
+      bottom: -1rem;
+    }
+
+    @include mq(m) {
+      bottom: -2rem;
+    }
+  }
 
   &__wrapper {
+    text-align: center;
   }
 
   &__textArea {
     max-width: 1280px;
     margin: 0 auto;
     padding: 4rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
+
+    @include mq(s) {
+      padding: 0;
+    }
   }
 
   &__title {
-    font-size: 1.8rem;
-    letter-spacing: 4px;
+    font-size: 2.8rem;
+    letter-spacing: 8px;
     font-weight: 400;
-    width: 20%;
+
+    @include mq(s) {
+      font-size: 2rem;
+    } 
+
+    @include mq(m) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__imgArea {
+    margin: 2rem auto 3rem auto;
+    width: 100%;
+    overflow-x: hidden;
+
+    @include mq(s) {
+      width: 80%;
+    }
+
+    @include mq(m) {
+      width: 80%;
+    }
+    
+    img {
+      width: 100%;
+      height: 300px;
+      cursor: pointer;
+      object-fit: cover;
+
+      @include mq(s) {
+        height: 200px;
+      }
+
+      &:hover {
+        transition: all 0.3s ease;
+        filter: brightness(0.8);
+      }
+    }
   }
 
   &__desc {
@@ -493,23 +732,11 @@
     letter-spacing: 4px;
     font-weight: 200;
     width: 70%;
-  }
+    margin: 0 auto;
 
-  &__imgArea {
-    margin: 0 auto 3rem auto;
-    width: 100%;
-    overflow-x: hidden;
-
-    img {
-      width: 100%;
-      transform: scaleY(1.05);
-      margin-right: 1rem;
-      cursor: pointer;
-
-      &:hover {
-        transition: all 0.3s ease;
-        filter: brightness(0.8);
-      }
+    @include mq(s) {
+      width: 90%;
+      font-size: 0.95rem;
     }
   }
 }
@@ -532,6 +759,14 @@
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
+
+    @include mq(s) {
+      flex-direction: column;
+    }
+
+    @include mq(m) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -539,6 +774,16 @@
     letter-spacing: 4px;
     font-weight: 400;
     width: 20%;
+
+    @include mq(s) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include mq(m) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__desc {
@@ -548,6 +793,12 @@
     letter-spacing: 4px;
     font-weight: 200;
     width: 70%;
+
+    @include mq(s) {
+      width: 90%;
+      margin-top: 0;
+      line-height: 2rem;
+    }
   }
 
   &__imgArea {
@@ -558,6 +809,41 @@
       height: 400px;
       object-fit: cover;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+      @include mq(s) {
+       display: none;
+      }
+
+      @include mq(m) {
+        display: none;
+      }
+    }
+  }
+
+  // Tablet & SP
+  &__imgArea.SP {
+    display: none;
+
+    @include mq(s) {
+      display: block;
+    }
+
+    @include mq(m) {
+      display: block;
+    }
+
+    img {
+      @include mq(s) {
+        display: block;
+        height: auto;
+        width: 80%;
+      }
+
+      @include mq(m) {
+        display: block;
+        height: auto;
+        width: 80%;
+      }
     }
   }
 }
@@ -581,6 +867,14 @@
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+
+    @include mq(s) {
+      flex-direction: column;
+    }
+
+    @include mq(m) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -588,6 +882,16 @@
     letter-spacing: 4px;
     font-weight: 400;
     width: 20%;
+
+    @include mq(s) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include mq(m) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__desc {
@@ -597,16 +901,61 @@
     letter-spacing: 4px;
     font-weight: 200;
     width: 70%;
+
+    @include mq(s) {
+      width: 90%;
+      margin-top: 0;
+      line-height: 2rem;
+    }
   }
 
   &__imgArea {
+
     img {
-      border-radius: 0 20px 20px 0;
+      border-radius: 20px 0 0 20px;
       width: 100%;
       max-width: 1280px;
       height: 400px;
       object-fit: cover;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+      margin-left: auto;
+
+      @include mq(s) {
+       display: none;
+      }
+
+      @include mq(m) {
+        display: none;
+      }
     }
   }
+
+    // Tablet & SP
+    &__imgArea.SP {
+      display: none;
+      margin-left: auto;
+  
+      @include mq(s) {
+        display: block;
+      }
+  
+      @include mq(m) {
+        display: block;
+      }
+  
+      img {
+        @include mq(s) {
+          display: block;
+          height: auto;
+          width: 80%;
+
+        }
+  
+        @include mq(m) {
+          display: block;
+          height: auto;
+          width: 80%;
+        }
+      }
+    }
 }

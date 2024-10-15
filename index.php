@@ -84,31 +84,31 @@
         <div class="office__wrapper">
             <div class="office__textArea">
                 <h2 class="office__title">各事業所</h2>
+
+                <div class="office__imgArea">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/recruit_img.jpeg'); ?>" alt="事務所">
+                </div>
+
                 <p class="office__desc">ACMEE株式会社は、全国に拠点を展開し、各地域のニーズに応じた多様なサービスを提供しています。各事業所では地域密着型のサービスを展開し、迅速かつ効果的な対応を行ないます。
                     社員一同、お客様に満足いただけるよう最善を尽くし、常に進化し続けることを目指しています。</p>
             </div>
 
-            <!-- Slick Slider -->
-            <div class="office__imgArea">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/office.jpg'); ?>" alt="事務所">
-            </div>
         </div>
-        <a class="btn greeting" href="#">代表挨拶</a>
+        <a class="btn greeting" href="#">各事業所一覧</a>
     </section>
 
     <!--  -->
     <section class="testimonial">
         <div class="testimonial__wrapper">
-            <div class="testimonial__textArea">
+            <div class="testimonial__textArea ">
                 <h2 class="testimonial__title">お客様の声</h2>
+                <!-- SP Image -->
+                <div class="testimonial__imgArea SP">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/testimonial_img.jpeg'); ?>" alt="お客様の声">
+                </div>
                 <p class="testimonial__desc">ACMEE株式会社は、お客様からの声を大切にし、サービス向上に努めています。<br />実際の利用者の満足度や具体的な改善点、成功事例などを詳しく掲載しています。これにより、新たな顧客にも信頼と安心を提供しています。</p>
             </div>
+            <!-- PC Image -->
             <div class="testimonial__imgArea">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/testimonial_img.jpeg'); ?>" alt="お客様の声">
             </div>
@@ -121,9 +121,15 @@
         <div class="recruit__wrapper">
             <div class="recruit__textArea">
                 <h2 class="recruit__title">採用情報</h2>
+                <!-- SP Image -->
+                <div class="recruit__imgArea SP">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/recruit_img.jpeg'); ?>" alt="お客様の声">
+                </div>
                 <p class="recruit__desc">ACMEE株式会社では、多岐にわたる事業領域での採用情報を掲載しています。<br />
                     様々な分野でのキャリアチャンスを提供しています。働きやすい環境と成長機会を重視し、応募者が自分に最適な職種を見つけられるようサポートしています。</p>
             </div>
+
+            <!-- PC Image -->
             <div class="recruit__imgArea">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/recruit_img.jpeg'); ?>" alt="採用情報">
             </div>
