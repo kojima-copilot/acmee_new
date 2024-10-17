@@ -802,6 +802,16 @@
   }
 
   &__imgArea {
+    margin-bottom: 4rem;
+
+    @include mq(s) {
+      margin-bottom: 2rem;
+    }
+
+    @include mq(m) {
+      margin-bottom: 2rem;
+    }
+
     img {
       border-radius: 0 20px 20px 0;
       width: 100%;
@@ -910,6 +920,15 @@
   }
 
   &__imgArea {
+    margin-bottom: 4rem;
+
+    @include mq(s) {
+      margin-bottom: 2rem;
+    }
+
+    @include mq(m) {
+      margin-bottom: 2rem;
+    }
 
     img {
       border-radius: 20px 0 0 20px;

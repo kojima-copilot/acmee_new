@@ -1,3 +1,5 @@
+@use '../../setting' as *;
+
 .contact__container {
     display: flex;
     justify-content: center;
@@ -6,26 +8,73 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 8rem auto;
+    margin: 4rem auto;
+
+    @include mq(s) {
+      margin: 2rem 0.6rem !important;
+      padding: 1.2rem 0.6rem !important;
+    }
+
+    @media screen and (max-width: 1300px) {
+      margin: 3rem 2rem;
+      padding: 1rem;
+    }
   
     .contact__left {
       flex: 1;
       padding: 2rem;
+
+      // @include mq(s) {
+      //   padding: 0;
+      // }
+  
+      // @include mq(m) {
+      //   padding: 0;
+      // }
   
       h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+
+        @include mq(s) {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        @include mq(m) {
+          font-size: 1.5rem;
+        }
       }
   
       p {
         line-height: 1.8;
         color: #666;
+
+        @include mq(s) {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin: 1.2rem 0;
+        }
+
+        @include mq(m) {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin: 1.2rem 0;
+        }
       }
     }
   
     .contact__right {
       flex: 2;
       padding: 2rem;
+
+      // @include mq(s) {
+      //   padding: 0;
+      // }
+  
+      // @include mq(m) {
+      //   padding: 0;
+      // }
   
       form {
         width: 100%;
@@ -75,7 +124,7 @@
       .contact__left,
       .contact__right {
         width: 100%;
-        padding: 1rem;
+        padding: 0;
       }
     }
   }

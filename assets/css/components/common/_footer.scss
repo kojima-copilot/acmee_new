@@ -214,10 +214,12 @@
 
     @include mq(m) {
       flex-direction: column;
+      padding: 2rem 0;
     }
 
     @include mq(s) {
       flex-direction: column;
+      padding: 2rem 0;
     }
 
     &__container {
@@ -228,10 +230,22 @@
 
       @include mq(m) {
         width: 100%;
+        padding: 0;
       }
 
       @include mq(s) {
         width: 100%;
+        padding: 0;
+      }
+
+      &.second {
+        @include mq(s) {
+          margin-top: 4rem;
+        }
+
+        @include mq(m) {
+          margin-top: 4rem;
+        }
       }
     }
 
@@ -239,6 +253,14 @@
       font-size: 1.2rem;
       letter-spacing: 4px;
       font-weight: 400;
+
+      @include mq(s) {
+        font-size: 1.1rem;
+      }
+
+      @include mq(m) {
+        font-size: 1.2rem;
+      }
     }
 
     &__desc {
@@ -249,6 +271,39 @@
       font-weight: 200;
       font-style: normal;
       min-height: 64px;
+
+      @include mq(s) {
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+        letter-spacing: 2px;
+      }
+
+      @include mq(m) {
+        font-size: 0.95rem;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+      }
+
+      &.NoSP {
+        @include mq(s) {
+          display: none;
+        }
+
+        @include mq(m) {
+          display: none;
+        }
+      }
+
+      &.biz_hours {
+
+        @include mq(s) {
+          margin-top: 1rem;
+        }
+
+        @include mq(m) {
+          margin-top: 1rem;
+        }
+      }
     }
 
     // Google Maps
@@ -259,7 +314,7 @@
       display: block;
 
       @include mq(s) {
-        width: 80%;
+        width: 85%;
         height: 280px;
       }
       @include mq(m) {
@@ -282,6 +337,16 @@
     justify-content: flex-end;
     align-items: center;
 
+    @include mq(s) {
+      flex-direction: column;
+      gap: 1rem;
+    } 
+
+    @include mq(m) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
     &__desc {
       font-size: 2rem;
       letter-spacing: 4px;
@@ -289,11 +354,27 @@
       color: $fontColor;
       transform: translate(0, -4px);
 
+      @include mq(s) {
+        font-size: 1.5rem;
+      } 
+
+      @include mq(m) {
+        font-size: 1.5rem;
+      }
+
       span {
         font-size: 3rem;
         font-weight: 400;
         transform: translate(0, 6px);
         display: inline-block;
+
+        @include mq(s) {
+          font-size: 2.5rem;
+        }
+
+        @include mq(m) {
+          font-size: 3rem;
+        }
       }
     }
 
